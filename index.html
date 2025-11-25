@@ -1,14 +1,154 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khu vui chơi Tom & Jerry</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khu vui chơi Tom & Jerry</title>
+  <link rel="stylesheet" href="style.css" />
+  link
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">TOM & JERRY WORLD</div>
+    </div>
+  </header>
+
+  <section class="tab-section">
+    <div class="container">
+      <ul class="tab-nav">
+        <li class="tab-item active" onclick="openTab(event, 'tab1')">
+          <div class="tab-icon"><img src="img/tab1.png" alt="tab1" class="tab-icon"></div>
+          <div class="tab-text">Vui chơi<br />Vận động</div>
+        </li>
+
+        <li class="tab-item" onclick="openTab(event, 'tab2')">
+          <div class="tab-icon"><img src="img/tab2.png" alt="tab2" class="tab-icon"></div>
+          <div class="tab-text">Trí tuệ &<br />Sáng tạo</div>
+        </li>
+
+        <li class="tab-item" onclick="openTab(event, 'tab3')">
+          <div class="tab-icon"><img src="img/tab3.png" alt="tab3" class="tab-icon"></div>
+          <div class="tab-text">Ẩm thực &<br />Tiện ích</div>
+        </li>
+      </ul>
+
+      <div id="tab1" class="tab-content active">
+        <h2 class="tab-heading">Khu Vui Chơi Vận Động</h2>
+        <p class="tab-desc">
+          Nơi các bé thỏa sức giải phóng năng lượng cùng Tom và Jerry.
+        </p>
+        <div class="game-list">
+          <div class="game-item">
+            <div class="game-thumb">
+              <img src="img/nhahoi.jpg" alt="Nhà Hơi Khổng Lồ">
+            </div>
+            <h3>Nhà Hơi Khổng Lồ</h3>
+            <p>Thiết kế an toàn, màu sắc rực rỡ.</p>
+          </div>
+
+          <div class="game-item">
+            <div class="game-thumb">
+              <img src="img/nhabong.jpg" alt="Nhà Bóng Liên Hoàn">
+            </div>
+            <h3>Nhà Bóng Liên Hoàn</h3>
+            <p>Hàng ngàn quả bóng sắc màu.</p>
+          </div>
+
+          <div class="game-item">
+            <div class="game-thumb">
+              <img src="img/nhacat.jpg" alt="Nhà Cát Sạch">
+            </div>
+            <h3>Nhà Cát Sạch</h3>
+            <p>Cát hạt muồng an toàn cho sức khỏe.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab2" class="tab-content">
+        <h2 class="tab-heading">Khu Trí Tuệ & Sáng Tạo</h2>
+        <p class="tab-desc">Góc nhỏ rèn luyện tư duy và sự khéo léo.</p>
+        <div class="game-list">
+          <div class="game-item">
+            <div class="game-thumb">HÌNH TÔ TƯỢNG</div>
+            <h3>Tô Tượng & Tranh Cát</h3>
+            <p>Thỏa sức sáng tạo màu sắc.</p>
+          </div>
+          <div class="game-item">
+            <div class="game-thumb">HÌNH LEGO</div>
+            <h3>Lắp Ghép Lego</h3>
+            <p>Phát triển tư duy logic.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab3" class="tab-content">
+        <h2 class="tab-heading">Ẩm Thực & Tiện Ích</h2>
+        <p class="tab-desc">Nạp lại năng lượng sau giờ chơi.</p>
+        <div class="game-list">
+          <div class="game-item">
+            <div class="game-thumb">HÌNH ĐỒ ĂN</div>
+            <h3>Quầy Snack Bar</h3>
+            <p>Xúc xích, bỏng ngô, nước trái cây.</p>
+          </div>
+          <div class="game-item">
+            <div class="game-thumb">HÌNH GHẾ NGỒI</div>
+            <h3>Khu Vực Phụ Huynh</h3>
+            <p>Ghế massage, Wifi miễn phí.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="promo-section">
+    <div class="container">
+      <h2 class="section-title">Bảng Tin Khuyến Mãi</h2>
+      <div class="promo-grid">
+        <div class="promo-card">
+          <div class="promo-img">IMG KM 1</div>
+          <div class="promo-info">
+            <div class="promo-date">24/11/2025</div>
+            <div class="promo-title">Giảm 50% vé vào cổng khai trương</div>
+          </div>
+        </div>
+        <div class="promo-card">
+          <div class="promo-img">IMG KM 2</div>
+          <div class="promo-info">
+            <div class="promo-date">20/11/2025</div>
+            <div class="promo-title">Tặng bỏng ngô cho bé check-in</div>
+          </div>
+        </div>
+        <div class="promo-card">
+          <div class="promo-img">IMG KM 3</div>
+          <div class="promo-info">
+            <div class="promo-date">15/11/2025</div>
+            <div class="promo-title">Combo vé tháng siêu tiết kiệm</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="birthday-section">
+    <div class="container birthday-content">
+      <h2>Tổ Chức Sinh Nhật Cho Bé</h2>
+      <p>
+        Trọn gói trang trí, MC, chú hề và thực đơn hấp dẫn tại Tom và Jerry.
+      </p>
+      <a href="tel:0901234567" class="btn-contact">LIÊN HỆ ĐẶT TIỆC NGAY</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Khu Vui Chơi Tom và Jerry.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
