@@ -24,3 +24,39 @@ function openTab(evt, tabName) {
     // 4. Thêm class active vào nút vừa nhấn (để nó sáng lên)
     evt.currentTarget.classList.add("active");
 }
+
+
+// MEnu
+function toggleMenu() {
+  const navMenu = document.querySelector('.nav-menu');
+  const hamburger = document.querySelector('.hamburger');
+  
+  navMenu.classList.toggle('active');
+  hamburger.classList.toggle('active');
+}
+
+// Đóng menu khi click vào link
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', function() {
+    document.querySelector('.nav-menu').classList.remove('active');
+    document.querySelector('.hamburger').classList.remove('active');
+    
+    // Xóa active khỏi tất cả links
+    document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+    // Thêm active vào link vừa click
+    this.classList.add('active');
+  });
+});
+
+// Smooth scroll khi click menu
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+    
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});

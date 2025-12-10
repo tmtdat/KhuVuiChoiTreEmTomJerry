@@ -11,12 +11,41 @@
 
 <body>
   <header>
-    <div class="container">
-      <div class="logo">TOM & JERRY WORLD</div>
-    </div>
+ <div class="container">
+    <nav class="navbar">
+      <!-- Logo bên trái -->
+      <div class="logo">
+        <img src="img/logo.png" alt="Tom & Jerry Logo" class="logo-img">
+        <span class="logo-text">TOM & JERRY WORLD</span>
+
+         <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link active">Trang Chủ</a>
+        </li>
+        <li class="nav-item">
+          <a href="#games" class="nav-link">Trò Chơi</a>
+        </li>
+        <li class="nav-item">
+          <a href="#promo" class="nav-link">Khuyến Mãi</a>
+        </li>
+        <li class="nav-item">
+          <a href="#birthday" class="nav-link" >Sinh Nhật</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Liên Hệ</a>
+        </li>
+      </ul>
+
+       <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </div>
   </header>
 
-  <section class="tab-section">
+   <section id="games" class="tab-section">
     <div class="container">
       <ul class="tab-nav">
         <li class="tab-item active" onclick="openTab(event, 'tab1')">
@@ -103,7 +132,9 @@
     </div>
   </section>
 
-  <section class="promo-section">
+  <!-- Khuyến mãi -->
+
+  <section id="promo" class="promo-section">
     <div class="container">
       <h2 class="section-title">Bảng Tin Khuyến Mãi</h2>
       <div class="promo-grid">
@@ -132,7 +163,7 @@
     </div>
   </section>
 
-  <section class="birthday-section">
+  <section id="birthday" class="birthday-section">
     <div class="container birthday-content">
       <h2>Tổ Chức Sinh Nhật Cho Bé</h2>
       <p>
@@ -142,7 +173,7 @@
     </div>
   </section>
 
-  <footer>
+  <footer id="contact">
     <div class="container">
       <p>&copy; 2025 Khu Vui Chơi Tom và Jerry.</p>
     </div>
